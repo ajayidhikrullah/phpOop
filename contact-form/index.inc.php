@@ -1,7 +1,60 @@
 <?php
+
+// $fullName = $_POST['fullName'];
+// $email = $_POST['email'];
+// $msg = $_POST['message'];
+
+
+class Send{
+	public $fullName;
+	public $email;
+	public $message;
+
+public function __construct($fullName, $email, $message){
+	$this->fullName = $fullName;
+	$this->email = $email;
+	$this->message = $message;
+	}
+
+public function sendMessage(){
+	$msg = $this->message;
+	return "<button class='btn btn-success'>Welcome, this is your message: $msg</button>";
+	}
+}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+// echo '<p>Im here</p>';
 	
-	// echo '<p>Im here</p>';
-	
+	/*
 	if (isset($_POST['submit'])) {
 		# code...
 		
@@ -23,5 +76,4 @@
 		echo "<button class='btn btn-primary'> This is my message $message </button>";
 		"</div>";
 	}
-
-?>
+*/ -->

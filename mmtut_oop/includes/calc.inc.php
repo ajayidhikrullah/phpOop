@@ -5,7 +5,7 @@ class Calc{
 	public $cal;
 
 	public function __construct($num1, $num2, $cal){
-		var_dump(func_get_args());
+		// var_dump(func_get_args());
 		$this->num1 = $num1;
 		$this->num2 = $num2;
 		$this->cal = $cal;

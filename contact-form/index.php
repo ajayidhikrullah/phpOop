@@ -1,8 +1,9 @@
 <?php
-include 'index.inc.php';
+include 'send.inc.php';
 	// if (filter_has_var(INPUT_POST, 'submit')) {
 	// 	echo "<div class='alert-success'>Submitted</div>";
 	// }
+	
 
 ?>
 <!DOCTYPE html>
@@ -24,10 +25,10 @@ include 'index.inc.php';
 	</nav>
 
 	<div class="container">
-		<form method="POST" action="index.php">
+		<form method="POST" action="send.inc.php">
 			<div class="form-group">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" class="form-control" value="">
+				<label for="name">Full-Name:</label>
+				<input type="text" id="name" name="fullName" class="form-control" value="">
 			</div>
 
 			<div class="form-group">
