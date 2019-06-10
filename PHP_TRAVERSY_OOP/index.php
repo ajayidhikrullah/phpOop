@@ -86,6 +86,7 @@ $user = new User();
 
 //STATIC properties OUTPUT
 // echo User::$staticProperties; //this print 100
+
 //STATIC METHODS OR FUNCTIONS PROPERTIES
 // echo User::staticPropeties(); //also print 100
 

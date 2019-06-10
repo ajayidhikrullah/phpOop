@@ -1,5 +1,5 @@
 <?php
-include 'send.inc.php';
+include 'includes/send.inc.php';
 	// if (filter_has_var(INPUT_POST, 'submit')) {
 	// 	echo "<div class='alert-success'>Submitted</div>";
 	// }
@@ -11,17 +11,22 @@ include 'send.inc.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 	<nav class="navbar navbar-default">
 		<div class="container">
-			<div class="navbar-header">
+			<!-- <div class="navbar-header"> -->
 				<a class="navbar-brand" href="<?php echo $_SERVER['PHP_SELF']; ?>">Dhikr Solutions</a>
-			</div>
+			<!-- </div> -->
 		</div>
 	</nav>
+	<div class='container'>
+		<li class='next'><a href="http://localhost:8000/contact-form/login.php"><span class='fa fa-arrow-right fa-1x'></span>Login</a></li>
+	</div>
+	<!-- <span class='glyphicon glyphicon-chevron-left'></span> -->
 
 	<div class="container">
 		<form method="POST" action="">
@@ -49,6 +54,17 @@ include 'send.inc.php';
 		</form>
 		
 	</div>
+
+
+
+	
+	<!-- <div class="container">
+    <ul class="pager"> -->
+    <!-- <li><a href="http://localhost:8000/contact-form/index.php">Previous</a></li> -->
+    <!-- <li class='next'><a href="http://localhost:8000/contact-form/login.php">Login</a></li> -->
+  <!-- </ul> -->
+	<!-- </div> -->
+
 
 	<script src="script.js"></script>
 
