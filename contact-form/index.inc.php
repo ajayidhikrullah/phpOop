@@ -19,7 +19,17 @@ public function __construct($fullName, $email, $message){
 public function sendMessage(){
 		$msg = $this->message;
 		if(empty($this->fullName) || empty($this->email) || empty($this->message)){
-			echo "<button onclick='myFunc()' id='shw' class='btn btn-danger'>Welcome, Please input something!!!</button>";
+			"<div class='danger-alert'>
+				<span class='closebtn' onclick='"this.parentElement.style.display=none"';'>&times;</span>
+					<b>Please, Input something</b>
+			</div>";
+			
+
+
+
+
+
+			// echo "<button onclick='myFunc()' id='shw' class='btn btn-danger'>Welcome, Please input something!!!</button>";
 		} else{
 			// return '<div class="alert alet-success"> thanksssssss </div>';
 	
