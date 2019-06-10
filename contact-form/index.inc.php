@@ -17,8 +17,16 @@ public function __construct($fullName, $email, $message){
 	}
 
 public function sendMessage(){
-	$msg = $this->message;
-	return "<button class='btn btn-success'>Welcome, this is your message: $msg</button>";
+		$msg = $this->message;
+		if(empty($this->fullName) || empty($this->email) || empty($this->message)){
+			echo "<button onclick='myFunc()' id='shw' class='btn btn-danger'>Welcome, Please input something!!!</button>";
+		} else{
+			// return '<div class="alert alet-success"> thanksssssss </div>';
+	
+			return "<button class='btn btn-success'>Welcome, this is your message: $msg</button>";
+	// header('Location: index.php');
+	
+		}
 	}
 }
 

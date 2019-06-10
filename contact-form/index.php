@@ -3,8 +3,6 @@ include 'send.inc.php';
 	// if (filter_has_var(INPUT_POST, 'submit')) {
 	// 	echo "<div class='alert-success'>Submitted</div>";
 	// }
-	
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +23,7 @@ include 'send.inc.php';
 	</nav>
 
 	<div class="container">
-		<form method="POST" action="send.inc.php">
+		<form method="POST" action="">
 			<div class="form-group">
 				<label for="name">Full-Name:</label>
 				<input type="text" id="name" name="fullName" class="form-control" value="">
@@ -43,7 +41,7 @@ include 'send.inc.php';
 			
 			<!-- <input type="submit" name="submit" value="submit"> -->
 
-		<button type="submit" name="submit" class="btn btn-primary">
+		<button type="submit" onclick="myFunc()" name="submit" class="btn btn-primary">
 			Send Message
 		</button>
 
@@ -51,7 +49,8 @@ include 'send.inc.php';
 		
 	</div>
 
-<script src=""></script>
+	<script src="script.js"></script>
+
 
 
 	
