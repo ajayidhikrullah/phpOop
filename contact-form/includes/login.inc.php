@@ -7,10 +7,29 @@ include 'includes/index.inc.php';
 			$password = $_POST['password'];
 			// var_dump($password);
 
-			///instantiate
-			$login = new User();
-			//call the class method to login
-			echo $login->userLogin($email, $password);
+		///INSTANTIATE
+			// $login = new User(null, $email, null, $password);
+		//CALL THE CLASS METHOD TO LOGIN
+			// echo $login->userLogin();
+			
+			
+			//ACCESSING THE PROPERTIES FROM THE MAIN CLASS
+				// $login->password;
+
+
+
+			//accessing the private properties from the magic method
+				// $login->password = $password;
+
+			//INHERITANCE CALLS
+			$login = new Login(null, $email, null, $password);
+			echo $login->getPassword();
+
+
+
+
+
+
 		}
 		
 		// $send->sendMessage();

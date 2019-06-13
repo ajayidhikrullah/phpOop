@@ -10,9 +10,7 @@ include 'includes/index.inc.php';
 		//instantiate the class
 			$send = new User($fullName, $email, $message);
 
-
-			# code...
-			//then send it out to users what is inside this function
+		//then send it out to users what is inside this function
 			echo $send->sendMessage();
 
 		}
