@@ -21,7 +21,7 @@ include 'includes/index.inc.php';
 			//accessing the private properties from the magic method
 				// $login->password = $password;
 			//INHERITANCE CALLS
-			$login = new Login(null, $email, null, $password);
+			$login = new Login($email, $password);
 			echo $login->getPassword();
 
 

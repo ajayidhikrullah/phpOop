@@ -60,11 +60,12 @@ class Login extends User{
 	//set the new variable to private
 	private $password;
 	//create a constructor to access the upper ones
-	public function __construct($fullName, $email, $message, $password ){
-		parent::__construct($fullName, $email, $message, $password);
+	public function __construct($email, $password){
+		// parent::__construct($fullName, $email, $message, $password);
 		// echo 'this is a new ' .__CLASS__.' initiated <br>';
-		$this->password = $password;
 		$this->email = $email;
+		$this->password = $password;
+
 	}
 
 	public function setPassword($password){
@@ -75,8 +76,6 @@ class Login extends User{
 	public function getPassword(){
 		$result = "<button class='btn btn-success'>The Email You just entered is = $this->email <br> and your password is = $this->password<br><button>";
 		return $result;
-
-
 	}
 }
 
