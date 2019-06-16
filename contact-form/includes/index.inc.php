@@ -68,7 +68,7 @@ class Login extends User{
 
 	}
 
-	public function setPassword($password){
+	public function setPassword($password){ 
 		$this->email = $email;
 		$this->password = $password;
 	}
