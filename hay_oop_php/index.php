@@ -2,8 +2,6 @@
 include 'includes/dbh.inc.php';
 include 'includes/showsign.inc.php';
 
-// include 'includes/usersignup.inc.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,15 +10,12 @@ include 'includes/showsign.inc.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<title>Document</title>
 </head>
 <body>
 
-<?php
-// $how = new Showsign();
-			// $how->showsignsInp();
-?>
 <nav class="navbar navbar-default">
 		<div class="container">
 			<!-- <div class="navbar-header"> -->
@@ -28,10 +23,15 @@ include 'includes/showsign.inc.php';
 			<!-- </div> -->
 		</div>
 	</nav>
+	
 	<div class='container'>
-		<li class='next'><a href="http://localhost:8000/contact-form/login.php"><span class='fa fa-arrow-right fa-1x'></span>Login</a></li>
+		<div class='next'><a href="http://localhost:8000/hay_oop_php/login.php"><span class='fa fa-arrow-right fa-1x'></span>Login</a></div>
 	</div>
 	<!-- <span class='glyphicon glyphicon-chevron-left'></span> -->
+
+	<?php
+	// $phpSuccessMsg = "<div class='btn btn-success'>User successfully registered</div>";
+	?>
 
 	<div class="container">
 		<form method="POST" action="">

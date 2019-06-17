@@ -19,8 +19,39 @@ class UserSignup extends Dbh{
 		if ($result == false){
 			echo 'No connection';
 		} else{
-			return $result;
+			return ;
 		}
 	}
 }
+
+///LOGIN
+// class LogUser extends UserSignup{
+// 	private $pwd;
+
+// 	public function __construct($email, $pwd){
+// 		$this->email = $email;
+// 		$this->pwd = $pwd;
+// 	}
+
+// 	public function loguser(){
+// 		$sql = "SELECT * FROM signups WHERE email = '$this->email' && password = '$this->pwd'";
+// 		//lets the query d sql sttement above
+// 		$result = $this->dbconnect()->query($sql);
+// 		//this fetches the total rows
+// 		$resultCheck = mysqli_num_rows($result);
+// 		//get users password
+// 		$row = mysqli_fetch_assoc($result);
+// 		// check if d value is lessdan 1
+// 		if($resultCheck < 1){
+// 			echo 'failed';
+// 		} else{
+// 			echo 'submitted successsfully!';
+// 		}
+		
+// 	}
+
+// }
+
+
+
 ?>

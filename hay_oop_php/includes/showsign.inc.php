@@ -11,16 +11,16 @@ include 'usersignup.inc.php';
 			# code...
 			// var_dump($fname, $lname);
 			
-			
-
-
-
 			$use = new UserSignup($fname, $lname, $email, $password);
 			$use->signUp();
-			echo "<button class='btn btn-success'>User successfully registered</button>";
+			echo "<div class='btn btn-success'>User successfully registered</div>";
+			// return $phpSuccessMsg;
 		} else{
 			return false;
 		}
 	// }
 // }
+
+
+
 ?>
