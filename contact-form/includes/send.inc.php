@@ -1,17 +1,38 @@
 <?php
 include 'includes/index.inc.php';
 // include 'login.php';
-		
-		// var_dump($message);
+	function sendTry(){
+	// var_dump($message);
+	//try{
 		if (isset($_POST['submit'])) {
 			$fullName = $_POST['fullName'];
 			$email = $_POST['email'];
 			$message = $_POST['message'];
+			if (empty($fullName) || empty($email) || empty($message)) {
+				# code...
+				throw new Exception('Input Message field SIR!');
+			} else{
+				return true;
+			// echo "<b>$message</b>";
+			}
 		//instantiate the class
-			$send = new User($fullName, $email, $message);
-
 		//then send it out to users what is inside this function
-			echo $send->sendMessage();
+		
 
-		}
+	} $send = new User($fullName, $email, $message);
+	echo $send->sendMessage();
+	sendTry();
+		
+	}
+
+
+	try{
+		echo 'we';
+
+	}
+
+	catch(Exception $e){
+		echo $e->getMessage();
+	}
+
 ?>
